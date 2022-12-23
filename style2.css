@@ -1,0 +1,10 @@
+.navbar {
+    background: transparent;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar {
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
+  

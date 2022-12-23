@@ -1,0 +1,238 @@
+    body {
+      background: rgb(255, 255, 255);
+      margin: 0;
+      position: relative;
+  }
+  
+    button {
+      border: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+      line-height: 1;
+      color: inherit;
+      font-family: "naruto-font";
+      font-size: 20px;
+  }
+  
+  @media (width >= 680px) {
+    button {
+      font-size: 16px;
+    }
+  }
+  
+  :is(.navbar, .burger, .dropdowns) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar {
+    /* border: 2px solid red; */
+    border-radius: 0px 0px 0px 0px;
+    z-index: 1;
+    left: 0;
+    display: flex;
+    align-items: stretch;
+    height: 72px;
+    background: transparent;
+    color: grey;
+  }
+  
+  .burger {
+    z-index: 3;
+    /* border: 2px solid black; */
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    background-image: url("/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  body.open .burger {
+    background-image: url("/close.png");
+  }
+  
+  @media (width >= 680px) {
+    .burger {
+      display: none;
+    }
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 14px;
+    height: 100%;
+    opacity: 0.6;
+  }
+  
+  .button > img {
+    display: inherit;
+  }
+  
+  @media (width >= 680px) {
+    .button {
+      padding: 0 59px 0 px;
+    }
+  
+    .button > img {
+      display: block;
+    }
+  }
+  
+  @media (width >= 680px) {
+    .dropdown:hover .button {
+      opacity: 1;
+    }
+  }
+  
+  .dropdowns {
+    left: -9999px;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    /* background: transparent; */
+    background: #000000d6;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 0.3s;
+  }
+  
+  @media (width < 680px) {
+    body.open .dropdowns  {
+      opacity: 1;
+      padding-top: 200px;
+      visibility: visible;
+      left: 0;
+    }
+  }
+
+  @media (width < 680px) {
+    .open .button_2 {
+      padding-top: 10px;
+    }
+  }
+  
+  @media (width >= 680px) {
+    .dropdowns {
+      position: static;
+      flex-direction: row;
+      justify-content: flex-down;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu {
+    display: grid;
+    margin-bottom: 28px;
+  }
+  
+  @media (width >= 680px) {
+    .dropdown {
+      height: 100%;
+      flex-direction: row;
+    }
+  
+    .dropdown-menu {
+      position: absolute;
+      top: 72px;
+      left: 0;
+      width: 80px;
+      /* padding: 6px 24px 10px; */
+      padding: 0px 10px 0px;
+      margin-bottom: 0;
+      place-items: start;
+      background: transparent;
+      opacity: 0;
+      visibility: hidden;
+      translate: 0 24px;
+      transition: 0.3s;
+      border-radius: 0px 0px 20px 20px;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      translate: 0 0;
+    }
+  }
+  
+  .dropdown-menu > button:hover {
+    opacity: 1;
+    background: -webkit-linear-gradient(red, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+   
+  .dropdown-menu > button span:hover {
+    color: #f9f9f9;
+    opacity: 1;
+    /* color: red; */
+  }
+  
+  @media (width >= 680px) {
+    .dropdown-menu > button {
+      opacity: 0.6;
+      height: 40px;
+    }
+  
+    .dropdown:hover .button {
+      opacity: 1;
+    }
+  }
+
+  /* Creating Own Font Family */
+  @font-face {
+    font-family: naruto-font;
+    src: url(/njnaruto.ttf);
+  }
+  
+  /* Sasuke Logo Text */
+  .logo1 {
+    margin-top: 5px;
+    font-size: 55px;
+    padding-left: 5px;
+    /* defining own created font family */
+    font-family: naruto-font;
+    background: -webkit-linear-gradient(red, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Naruto lOGO iMAGE */
+
+  /* .img1 {
+    width: 100px;
+  } */
+
+  @media (width < 550px) {
+    .logo1 {
+      font-size: 50px;
+      padding-top: 5px;
+      padding-left: 10px;
+    }
+  }
+
+  .btn_hover_clr {
+    background: -webkit-linear-gradient(red, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+  margin: 0;
+  padding: 0;
+  font-family: "Euclid Circular A", "Poppins";
+  background: #AE062C;
+  color: #f9f9f9;
+}
+
+/* original one */
+/* 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 320px;
+  border-radius: 16px;
+  background: url("/Parallax/parallax\ uchiha\ bg.jpg");
+  background-size: 110%;
+  background-position: center;
+  transition: 0.5s;
+} */
+/* for chibi */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: url("/parallax\ uchiha\ bg.jpg");
+    background-size: 110%;
+    background-position: center;
+    transition: 0.5s;
+  }
+
+/* orignal one */
+
+/* .card h1 {
+    font-size: 38px;
+    text-decoration: none;
+    padding-top: 150px;
+} */
+
+/* Creating Own Font Family */
+@font-face {
+  font-family: naruto-font;
+  src: url(/njnaruto.ttf);
+}
+/* adjustments for chibi */
+
+.card h1 {
+    font-size: 38px;
+    text-decoration: none;
+    font-family: naruto-font;
+    padding-top: 400px;
+}
+
+.card a {
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 0;
+  background: #221e6f;
+  color: #f9f9f9;
+  font-family: inherit;
+}
+
+/* original button came with code */
+
+/* .card button {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 0;
+    background: #221e6f;
+    color: #f9f9f9;
+    font-family: inherit;
+  } */
+
+  .button-more{
+    text-decoration: none;
+    color: #f9f9f9;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasuke</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/hovercard.css">
+    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <button onclick="toggleMenu()" class="burger"></button>
+            <button class="logo1" disabled>Uchiha</button>
+            <!-- <button class="logoimg1"><img class="img1" src="/naruto-logo.png" alt=""></button> -->
+            <div class="dropdowns">
+              <div class="dropdown">
+                <button class="button  btn_hover_clr">
+                  Madara
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="button btn_hover_clr">
+                  Sasuke
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="button btn_hover_clr">
+                  Itachi
+                  <img src="chevron.svg" />
+                </button>
+                <div class="dropdown-menu">
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="button btn_hover_clr">
+                  Shisui
+                  <img src="/chevron.svg">
+                </button>
+                <div class="dropdown-menu">
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                  <button class="button_2"></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+<div class="chibi-cards">
+
+  <!-- Madara chibi -->
+
+  <div class="hover-card">
+    <div class="card madara">
+      <div class="circle"></div>
+      <div class="content">
+        <h2>Madara</h2>
+        <h3><i>Ghost Of The Uchiha</i></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="">Explore More</a>
+      </div>
+      <div class="pic1">
+        <img src="/Chibi/madara chibi.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sasuke chibi -->
+
+      <div class="hover-card">
+        <div class="card sasuke">
+          <div class="circle"></div>
+          <div class="content">
+            <h2>Sasuke</h2>
+            <h3>The Last Uchiha</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="">Explore More</a>
+          </div>
+          <div class="pic1">
+            <img src="/Chibi/sasuke chibi.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Itachi chibi -->
+
+      <div class="hover-card">
+        <div class="card itachi">
+          <div class="circle"></div>
+          <div class="content">
+            <h2>Itachi</h2>
+            <h3>Itachi Of Sharingan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="">Explore More</a>
+        </div>
+        <div class="pic1">
+          <img src="/Chibi/itachi-chibi.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <!-- shisui chibi -->
+    
+    <div class="hover-card">
+      <div class="card shisui">
+        <div class="circle"></div>
+        <div class="content">
+          <h2>Shisui</h2>
+          <h3>The Body Flicker</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="">Explore More</a>
+        </div>
+        <div class="pic1">
+          <img src="/Chibi/shisui_chibi.png" alt="">
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+    
+    <script>
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+  </html>
